@@ -4,21 +4,21 @@ import "./App.css";
 function App() {
   const [input, setInput] = useState("");
 
-  // دالة لإضافة الرقم أو العملية
+  
   const handleClick = (value) => {
     setInput(input + value);
   };
 
-  // دالة لحساب النتيجة
+  
   const calculate = () => {
     try {
-      setInput(eval(input).toString()); // eval يحسب العملية
+      setInput(eval(input).toString()); 
     } catch (error) {
       setInput("Error");
     }
   };
 
-  // دالة لمسح الشاشة
+  
   const clear = () => {
     setInput("");
   };
